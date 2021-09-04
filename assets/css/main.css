@@ -1,0 +1,488 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Fira Sans", sans-serif;
+}
+.clear-fix::after {
+  clear: both;
+}
+.bumper {
+  width: 100%;
+  height: 24px;
+}
+
+/* --------rút gọn element----------- */
+.line {
+  margin: 55px 168px 0;
+}
+.title {
+  color: #121721;
+  /* padding: 10px; */
+  text-align: center;
+  padding: 70px 0 50px;
+}
+.title-font {
+  font-size: 36px;
+  font-weight: 500;
+}
+.layout {
+  width: 100%;
+  height: 425px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-layout {
+  padding: 10px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-column-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 52px 27px;
+}
+.img-layout {
+  width: 595px;
+  height: 295px;
+  object-fit: cover;
+  margin: 0 0 16px;
+  transition: content 0.25s ease-in-out 0.3s;
+  -webkit-transition: content 0.25s ease-in-out 0.3s;
+}
+.name-layout {
+  font-size: 22px;
+  padding: 11px;
+  color: #111821;
+}
+.price-layout {
+  color: #121721;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 11px;
+}
+/* hover access */
+/* .name-layout,
+.price-layout,
+.img-layout:hover {
+  cursor: pointer;
+  opacity: 0.5;
+} */
+.bg-layout {
+  width: 100%;
+  height: 100%;
+  background-color: #f7f7f7;
+}
+/* ----------end rút gọn element-------------- */
+
+#main {
+}
+
+/* -----------beign header------------- */
+#header {
+  height: 90px;
+  background-color: #ffffff;
+  margin: 0 80px;
+  text-align: center;
+  position: relative;
+}
+#header > * {
+  display: inline-block;
+}
+#header > .nav-right > li {
+  float: left;
+  /* padding: 29px 20px; */
+  margin-top: 15px;
+  list-style-type: none;
+}
+.nav-right > li {
+  position: relative;
+  /* display: inline-block; */
+}
+
+.nav-right .subnav {
+  position: absolute;
+  width: 200%;
+  top: 74px;
+  left: 0px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.25s linear 0.15s;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+}
+.subnav li {
+  display: flex;
+  font-size: 16px;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 30px;
+}
+.subnav li a {
+  color: #111821;
+  font-size: 16px;
+  line-height: 10px;
+  display: block;
+  /* transition: font-weight 0.15s ease-out; */
+}
+.subnav li a:hover {
+  font-size: 18px;
+  font-weight: 600;
+}
+.nav-right li:hover .subnav {
+  z-index: 999;
+  opacity: 1;
+}
+#header .nav-left li {
+  float: left;
+  /* padding: 29px 20px; */
+  list-style-type: none;
+  margin-top: 15px;
+}
+#header .nav-right {
+  /* display: inline-block; */
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#header .nav-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#header a:nth-child(2) {
+  font-weight: 900;
+  font-size: 50px;
+  text-decoration: underline;
+  font-family: "Bungee", cursive;
+  text-transform: uppercase;
+  /* letter-spacing: 1px; */
+  margin: 0 80px;
+  line-height: 90px;
+  color: #000;
+  overflow: hidden;
+  text-shadow: 0 0 2px #ccc;
+}
+#header a:nth-child(2):hover {
+  opacity: 0.8;
+}
+#header .nav-right a {
+  text-decoration: none;
+  /* display: inline-block; */
+  color: #000;
+}
+#header > .nav-right > li > a {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding: 19px 20px;
+  line-height: 90px;
+  /* display: inline-block; */
+}
+#header > .nav-right > li > a:hover {
+  border-bottom: 3px solid #000;
+}
+#header .nav-left a {
+  line-height: 90px;
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  padding: 19px 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  /* margin: 0 0 20px; */
+}
+#header .nav-left a:hover {
+  border-bottom: 3px solid #000;
+}
+/* ----------------end header------------- */
+
+/* ==================== begin product ============================== */
+/* -------------hover da đời thường--------------------- */
+.grid-layout .img-cloth-ordinary1:hover {
+  cursor: pointer;
+  content: url(../img/cloth-ordinary/front-4.jpg);
+}
+
+/* -------------hover vải thường------------- */
+.grid-layout .img-cotton-ordinary1:hover {
+  cursor: pointer;
+  content: url(../img/cotton-ordinary/11.jpg);
+}
+.grid-layout .img-cotton-ordinary2:hover {
+  cursor: pointer;
+  content: url(../img/cotton-ordinary/22.jpg);
+}
+.grid-layout .img-cotton-ordinary3:hover {
+  cursor: pointer;
+  content: url(../img/cotton-ordinary/33.jpg);
+}
+.grid-layout .img-cotton-ordinary4:hover {
+  cursor: pointer;
+  content: url(../img/cotton-ordinary/44.jpg);
+}
+.grid-layout .img-cotton-ordinary5:hover {
+  cursor: pointer;
+  content: url(../img/cotton-ordinary/55.jpg);
+}
+.grid-layout .img-cotton-ordinary6:hover {
+  cursor: pointer;
+  content: url(../img/cotton-ordinary/66.jpg);
+}
+
+/* ----------------hover da đời mới------------------ */
+.grid-layout .img-cloth-new1:hover {
+  cursor: pointer;
+  content: url(../img/cloth-new/2-clo-new.jpg);
+}
+.grid-layout .img-cloth-new2:hover {
+  cursor: pointer;
+  content: url(../img/cloth-new/4-clo-new.jpg);
+}
+
+/* ---------------hover vải đời mới------------------ */
+.grid-layout .img-cotton-new_a:hover {
+  cursor: pointer;
+  content: url(../img/cotton-new/aa.jpg);
+}
+.grid-layout .img-cotton-new_b:hover {
+  cursor: pointer;
+  content: url(../img/cotton-new/bb.jpg);
+}
+.grid-layout .img-cotton-new_c:hover {
+  cursor: pointer;
+  content: url(../img/cotton-new/cc.jpg);
+}
+.grid-layout .img-cotton-new_d:hover {
+  cursor: pointer;
+  content: url(../img/cotton-new/dd.jpg);
+}
+.grid-layout .img-cotton-new_e:hover {
+  cursor: pointer;
+  content: url(../img/cotton-new/ee.jpg);
+}
+.grid-layout .img-cotton-new_f:hover {
+  cursor: pointer;
+  content: url(../img/cotton-new/ff.jpg);
+}
+.grid-layout .img-cotton-new_g:hover {
+  cursor: pointer;
+  content: url(../img/cotton-new/gg.jpg);
+}
+.grid-layout .img-cotton-new_h:hover {
+  cursor: pointer;
+  content: url(../img/cotton-new/hh.jpg);
+}
+/* =============================== end product =================================== */
+
+/* ================================== BEGIN ABOUT ==================================== */
+.title-about {
+  position: relative;
+}
+.translate-title {
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100px;
+  padding: 0 30px;
+  color: #aaa;
+}
+.line-mod-about {
+  margin: 55px 262px 0;
+}
+/* ================================== END ABOUT ==================================== */
+
+#about {
+}
+.grid-col-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail-about-img {
+  object-fit: cover;
+  width: 410px;
+  height: 285px;
+  filter: brightness(0.8);
+}
+.col-3 {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-gap: 0 3px;
+  align-items: center;
+  justify-items: center;
+}
+.item-about {
+  position: relative;
+  margin: 0 0 100px;
+}
+.item-about .quote-about {
+  color: #fff;
+  z-index: 999;
+  font-size: 21px;
+  position: absolute;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 45px;
+}
+.detail-about-img:hover {
+  filter: brightness(0.66);
+  cursor: pointer;
+  font-size: 36px;
+}
+/* =================== end about ===================== */
+
+/* ======================== begin downtown ================== */
+.mot-downtown {
+}
+.font-downtown {
+  font-size: 36px;
+  color: #121721;
+  font-weight: 500;
+}
+.item-downtown .img-downtown {
+  width: 162px;
+  height: 192px;
+  object-fit: cover;
+  bottom: 100px;
+}
+.downtown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-downtown {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  grid-gap: 0 5.5px;
+  margin: 0 0 100px;
+}
+.item-downtown:hover {
+  filter: brightness(0.8);
+}
+.grid-downtown * {
+  cursor: pointer;
+}
+/* ====================== end downtown ====================== */
+
+/* ======================== begin info ====================== */
+#info .bg-info {
+  padding: 100px 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+#info .bg-info::before {
+  content: "";
+  display: block;
+  clear: both;
+}
+.grid-info-address {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.bg-info {
+  height: 470px;
+  background-color: #121720;
+}
+.info-title {
+  font-size: 16px;
+  color: #d8dcdb;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.address {
+  color: #727bbc;
+  line-height: 1.6;
+  font-size: 14.4px;
+  margin: 0 20px 0 0;
+}
+.bocongthuong {
+  width: 140px;
+  height: 53px;
+  margin: 38px 0 75px;
+}
+.info-help {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.info-help a {
+  margin: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: #a0a8af;
+  text-decoration: none;
+  line-height: 1.4;
+  letter-spacing: 1.5px;
+  flex: 20%;
+}
+.info-help a:hover {
+  color: #fff;
+}
+.support {
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+.social-media a {
+  margin: 8px;
+}
+.social-media a:hover {
+  filter: opacity(0.8);
+}
+.icon-social {
+  color: #fff;
+  font-size: 36px;
+}
+/* ================================= end info ========================== */
+
+/* ================================== begin footer ==================== */
+#footer {
+  background-color: rgb(17, 16, 16);
+}
+.footer-site {
+  height: 70px;
+  margin: 0 156px;
+  position: relative;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(182, 180, 180);
+}
+.footer-site * {
+  line-height: 70px;
+}
+.copyright {
+  text-transform: uppercase;
+}
+.faq {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.faq a {
+  color: rgb(182, 180, 180);
+  text-decoration: none;
+  margin: 10px;
+  text-transform: uppercase;
+}
+.faq a:hover {
+  color: #fff;
+  text-decoration: underline;
+}

@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Fira Sans", sans-serif;
+}
+.clear {
+  clear: both;
+}
+.slideshow-container-product {
+  width: 100% !important;
+  height: 790px;
+}
+.prev,
+.next {
+  color: #555 !important;
+  font-size: 36px;
+}
+.prev:hover,
+.next:hover {
+  background-color: #ddd !important ;
+}
+.mySlides {
+  z-index: 99;
+}
+
+/* ======================================================= */
+.conten-sidebar-wrap {
+  margin: 40px 156px 0;
+  width: 1207px;
+  height: 2408px;
+  /* padding: 40px 0; */
+}
+.conten-sidebar-wrap .grid-genesis-contents {
+  padding: 60px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0 75px;
+}
